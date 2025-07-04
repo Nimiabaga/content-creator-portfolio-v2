@@ -1,11 +1,11 @@
-/* Reset default browser styles */
+/* === Reset Styles === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body and global styling */
+/* === Global Body Styling === */
 body {
   font-family: 'Segoe UI', sans-serif;
   background: #0d0d0d;
@@ -14,7 +14,7 @@ body {
   line-height: 1.6;
 }
 
-/* Main content area */
+/* === Main Area === */
 main {
   padding: 30px 20px;
   max-width: 800px;
@@ -22,7 +22,7 @@ main {
   text-align: center;
 }
 
-/* Creator tag badge */
+/* === Creator Badge === */
 .creator-tag {
   display: inline-block;
   padding: 8px 16px;
@@ -35,7 +35,7 @@ main {
   animation: slideDown 1s ease forwards;
 }
 
-/* Headings */
+/* === Headings === */
 h1 {
   font-size: 32px;
   margin-bottom: 20px;
@@ -49,7 +49,7 @@ h2 {
   color: #ff6b00;
 }
 
-/* Paragraphs */
+/* === Intro Text === */
 .intro {
   font-size: 18px;
   margin-bottom: 20px;
@@ -63,7 +63,7 @@ h2 {
   margin-top: 10px;
 }
 
-/* Image section */
+/* === Fun Image === */
 .fun-img {
   display: flex;
   justify-content: center;
@@ -78,40 +78,40 @@ h2 {
   background-color: #fff;
 }
 
-/* Bottom navigation – FIXED VERSION */
+/* === Bottom Navigation (Fixed + Styled like B&B) === */
 .bottom-nav {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
-  background-color: #1a1a1a;
-  border-top: 1px solid #333;
+  background-color: #000;
+  border-top: 2px solid #be9548;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 0.6rem 10px;
+  padding: 12px 0;
   z-index: 1000;
 }
 
 .bottom-nav a {
   flex: 1;
   text-align: center;
-  color: #ff6b00;
+  color: #be9548;
   font-weight: bold;
+  font-size: 17px;
   text-decoration: none;
-  font-size: 16px;
-  padding: 10px 5px;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  padding: 10px;
+  transition: all 0.3s ease;
 }
 
 .bottom-nav a:hover {
-  background-color: #ff6b00;
-  color: #0d0d0d;
-  border-radius: 8px;
+  background-color: #be9548;
+  color: #000;
+  border-radius: 6px;
 }
 
-/* Animations */
+/* === Animations === */
 .fade-in {
   opacity: 0;
   animation: fadeIn 1s ease forwards;
@@ -146,7 +146,6 @@ h2 {
   animation: slideUp 0.8s ease 1.2s forwards;
 }
 
-/* Keyframes */
 @keyframes fadeIn {
   to {
     opacity: 1;
@@ -171,7 +170,7 @@ h2 {
   }
 }
 
-/* Profile Section */
+/* === Profile Section === */
 .profile-section {
   margin-top: 20px;
   text-align: center;
@@ -187,7 +186,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Skills Section */
+/* === Skills Section === */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -215,7 +214,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Projects Section */
+/* === Projects Section === */
 .project-section {
   margin: 40px 0;
   padding: 0 20px;
@@ -253,7 +252,7 @@ h2 {
   object-fit: cover;
 }
 
-/* Contact Section */
+/* === Contact Section === */
 .contact-box {
   background: #1c1c1c;
   padding: 20px;
@@ -283,7 +282,7 @@ h2 {
   transform: scale(1.2);
 }
 
-/* Contact Image */
+/* === Contact Image === */
 .contact-img {
   text-align: center;
   margin-bottom: 20px;
@@ -297,7 +296,7 @@ h2 {
   box-shadow: 0 0 10px rgba(255, 107, 0, 0.3);
 }
 
-/* Floating Buttons */
+/* === Floating Buttons === */
 .floating-buttons {
   position: fixed;
   bottom: 80px;
@@ -325,7 +324,7 @@ h2 {
   height: 24px;
 }
 
-/* Mobile Tweaks */
+/* === Responsive Nav === */
 @media (max-width: 500px) {
   .bottom-nav a {
     font-size: 14px;
