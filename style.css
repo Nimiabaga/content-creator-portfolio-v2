@@ -78,23 +78,22 @@ h2 {
   background-color: #fff;
 }
 
-/* Bottom navigation */
+/* Bottom navigation - FIXED */
 .bottom-nav {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   background-color: #1a1a1a;
   display: flex;
   justify-content: space-around;
-  padding: 16px 0;
+  padding: 0.6rem 0;
   border-top: 1px solid #333;
-  z-index: 10;
+  z-index: 1000;
 }
 
 .bottom-nav a,
 .nav-link {
-  flex: 1;
-  text-align: center;
   color: #ff6b00;
   font-weight: 800;
   font-size: 18px;
